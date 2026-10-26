@@ -3,10 +3,8 @@ import numpy as np
 import pandas as pd 
 from PIL import Image, ImageOps
 import matplotlib.pyplot as plt
-
-
-
 import os
+
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
@@ -14,7 +12,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import numpy as np
 import pandas as pd
 
-data = pd.read_csv('/kaggle/input/datasets/nietzs96/mnist-5k/mnist1.5k.csv')
+data = pd.read_csv('mnist1.5k.csv')
 data.head()
 
 data = np.array(data)
